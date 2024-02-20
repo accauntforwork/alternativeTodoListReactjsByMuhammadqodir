@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 100%;
+}
+li {
+  border: 2px solid grey;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+li > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: black;
+}
+li:nth-child(even) {
+  background-color: rgb(91, 98, 133);
+}
+li:nth-child(odd) {
+  background-color: rgb(122, 108, 108);
+}
+li:hover {
+  transform: scale(1.05);
+}
+span {
+  color: white;
+}
